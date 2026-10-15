@@ -1,0 +1,14 @@
+{
+  "domain": "gcom",
+  "name": "10G.com",
+  "codeowners": ["@malvere"],
+  "config_flow": true,
+  "dependencies": ["http", "websocket_api"],
+  "documentation": "https://github.com/malvere/gcom-home-assistant",
+  "integration_type": "hub",
+  "iot_class": "cloud_polling",
+  "issue_tracker": "https://github.com/malvere/gcom-home-assistant/issues",
+  "requirements": [],
+  "single_config_entry": true,
+  "version": "0.1.0"
+}

@@ -1,0 +1,11 @@
+{
+  "files_sha256": {
+    "LICENSE": "ade0988ce84456731423c5d6b44a5b62853ff012957df3bfbaae44d7e923b3e7",
+    "__init__.py": "5a7c22c5f9740661ff1a77f054d6f690ee307fcede8590eb17bf2300653c5f0f",
+    "client.py": "2b1fe1f5aaddac88207e1ae7afad8d69f04cd9c5c5d83cddd548c6a9335f7dce",
+    "errors.py": "84cc8c06e1840a14ef8f47b0ca806ede6e99f7bdd67c4c956694b92eb61809e4",
+    "models.py": "bd4c5981c77ccabd54ef8bd39402a48b28425ec758f4f6a838c959e98372d35c",
+    "tokens.py": "ed0be38af017e504fedbd96c7e8a47558ea37b190455ab0702e25715135bc091"
+  },
+  "source": "sibling gcom-client project"
+}

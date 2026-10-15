@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Connect to 10G.com",
+        "description": "Provide the API endpoints, client credentials, and a refresh token. These values are stored in Home Assistant's configuration storage.",
+        "data": {
+          "base_url": "API base URL",
+          "token_url": "Token URL",
+          "client_id": "Client ID",
+          "client_secret": "Client secret",
+          "refresh_token": "Refresh token"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Reconnect to 10G.com",
+        "data": {"refresh_token": "New refresh token"}
+      }
+    },
+    "error": {
+      "invalid_url": "Use valid HTTPS URLs without credentials or query strings",
+      "invalid_auth": "The refresh token or client credentials were rejected",
+      "cannot_connect": "Could not connect to 10G.com"
+    },
+    "abort": {"already_configured": "10G.com is already configured", "reauth_successful": "Reauthentication succeeded"}
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "10G.com options",
+        "data": {
+          "open_enabled": "Enable entrance opening buttons",
+          "codes_enabled": "Enable administrator access-code panel",
+          "poll_minutes": "Polling interval (minutes)"
+        }
+      }
+    }
+  },
+  "entity": {"button": {"open_entrance": {"name": "Open entrance"}}}
+}

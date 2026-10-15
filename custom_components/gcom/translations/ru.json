@@ -1,0 +1,40 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Подключить 10G.com",
+        "description": "Укажите адреса API, идентификатор и секрет клиента, а также refresh token. Значения хранятся в конфигурации Home Assistant.",
+        "data": {
+          "base_url": "Базовый адрес API",
+          "token_url": "Адрес токена",
+          "client_id": "ID клиента",
+          "client_secret": "Секрет клиента",
+          "refresh_token": "Refresh token"
+        }
+      },
+      "reauth_confirm": {
+        "title": "Повторное подключение к 10G.com",
+        "data": {"refresh_token": "Новый refresh token"}
+      }
+    },
+    "error": {
+      "invalid_url": "Укажите корректные HTTPS-адреса без учётных данных и параметров",
+      "invalid_auth": "Refresh token или данные клиента отклонены",
+      "cannot_connect": "Не удалось подключиться к 10G.com"
+    },
+    "abort": {"already_configured": "10G.com уже настроен", "reauth_successful": "Повторная авторизация прошла успешно"}
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Параметры 10G.com",
+        "data": {
+          "open_enabled": "Включить кнопки открытия входов",
+          "codes_enabled": "Включить панель кодов доступа для администратора",
+          "poll_minutes": "Интервал обновления (минуты)"
+        }
+      }
+    }
+  },
+  "entity": {"button": {"open_entrance": {"name": "Открыть вход"}}}
+}
